@@ -10,7 +10,7 @@ on:
     branches: [ "master" ]
     
 env:
-  VALOR_VARIAVEL: ${{ secrets.VARIAVEL }}
+  VALOR_VARIAVEL: ${{secrets.VARIAVEL}}
     
 jobs:
 
