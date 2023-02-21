@@ -32,7 +32,7 @@ jobs:
 
     - name: Test
       run: |
-        echo "Variavel no secrets valor " : ${{ secrets.VARIAVEL }}
+        echo "Variavel no secrets valor ${{ secrets.VARIAVEL }} " 
         go test -v main_test.go
         
 
