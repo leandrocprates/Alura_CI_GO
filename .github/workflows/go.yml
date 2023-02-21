@@ -36,7 +36,7 @@ jobs:
 
     - name: Test
       run: |
-        echo "Variavel no secrets valor $VALOR_VARIAVEL " 
+        echo "Variavel no secrets valor $VALOR_VARIAVEL" 
         go test -v main_test.go
         
 
