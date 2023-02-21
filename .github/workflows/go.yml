@@ -12,6 +12,7 @@ on:
 env:
   VALOR_VARIAVEL: ${{secrets.VARIAVEL}}
   VALOR_VARIAVEL_2: ${{secrets.VARIAVEL_2}}
+  VALOR_VARIAVEL_3: valor3
   
     
 jobs:
@@ -38,7 +39,7 @@ jobs:
 
     - name: Test
       run: |
-        echo "Variavel no secrets valor $VALOR_VARIAVEL , $VALOR_VARIAVEL_2 " 
+        echo "Variavel no secrets valor $VALOR_VARIAVEL , $VALOR_VARIAVEL_2,  $VALOR_VARIAVEL_3 " 
         go test -v main_test.go
         
 
