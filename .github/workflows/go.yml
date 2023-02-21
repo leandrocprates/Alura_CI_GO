@@ -12,7 +12,7 @@ on:
 env:
   VALOR_VARIAVEL: ${{secrets.VARIAVEL}}
   VALOR_VARIAVEL_2: ${{secrets.VARIAVEL_2}}
-  VALOR_VARIAVEL_3: ${{env.VARIAVEL_MOSTRA_VALOR}}
+  VALOR_VARIAVEL_3: ${{vars.VARIAVEL_MOSTRA_VALOR}}
   
     
 jobs:
