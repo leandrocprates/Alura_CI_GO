@@ -8,6 +8,10 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+    
+env:
+  VALOR_VARIAVEL: ${{ secrets.VARIAVEL }}
+    
 jobs:
 
   test:
@@ -32,7 +36,7 @@ jobs:
 
     - name: Test
       run: |
-        echo "Variavel no secrets valor `${{ secrets.VARIAVEL }}` " 
+        echo "Variavel no secrets valor $VALOR_VARIAVEL " 
         go test -v main_test.go
         
 
